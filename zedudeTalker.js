@@ -36,12 +36,12 @@ rl.question('What`s your name??: ', (acc) => {
                         zedudeTalker();
                     }, Number(answr) * 1000)
                 }); break
-                case 'what is the time', 'tell me the time':
+                case 'what is the time':
                     let time = date.getHours();
                     let minute = date.getMinutes();
                     console.log(`It's ${time} o'clock and ${ minute } minute(s)`)
                     zedudeTalker(); break
-                case 'what is the date', 'tell me the date':
+                case 'what is the date':
                     let year = date.getFullYear();
                     let month = date.getMonth();
                     let day = date.getDate();
@@ -97,7 +97,7 @@ rl.question('What`s your name??: ', (acc) => {
                 case 'how are you':
                     console.log('I`m fine thnks')
                     zedudeTalker(); break
-                case 'what is', 'what are':
+                case 'what is':
                     rl.question('WHAT?? ', (quiz) => {
                         switch (quiz) {
                             case 'zedude': console.log('Zedude is a being who/which you can not see. But you can see his host body. It`s host body will do what Zedude tells him/her to do. Right now Zedude is in an aian boy called Tserenlkhagva.'); zedudeTalker(); break
@@ -127,6 +127,7 @@ rl.question('What`s your name??: ', (acc) => {
                     }); zedudeTalker(); break
                 case 'what do like':
                     console.log('Well I like everything good, but the thing I like most is Zedude'); zedudeTalker(); break
+                case 'hello': console.log(`Hello ${acc}`); zedudeTalker(); break
                 default:
                     console.log('Sry IDK')
                     zedudeTalker();
