@@ -128,6 +128,12 @@ rl.question('What`s your name??: ', (acc) => {
                 case 'what do like':
                     console.log('Well I like everything good, but the thing I like most is Zedude'); zedudeTalker(); break
                 case 'hello': console.log(`Hello ${acc}`); zedudeTalker(); break
+                case 'what can you do': 
+                    let a = Math.floor(Math.random() * 2)
+                    switch(a) {
+                        case 0: console.log('You can say `what is` and ask anything'); break
+                        case 1: console.log('You can say `what is the time` or `what is the date`'); break
+                    }; zedudeTalker(); break
                 default:
                     console.log('Sry IDK')
                     zedudeTalker();
