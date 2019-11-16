@@ -134,6 +134,8 @@ rl.question('What`s your name??: ', (acc) => {
                         case 0: console.log('You can say `what is` and ask anything'); break
                         case 1: console.log('You can say `what is the time` or `what is the date`'); break
                     }; zedudeTalker(); break
+                case `let's play a game`: 
+                    console.log('I`m not smart enough to play those, so here`s a link to some: https://www.npmjs.com/search?q=games');zedudeTalker(); break
                 default:
                     console.log('Sry IDK')
                     zedudeTalker();
