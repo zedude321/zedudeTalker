@@ -7,7 +7,7 @@ let date = new Date();
 console.log('Hello, and welcome to Zedude Talker. Where I like Zedude');
 rl.question('What`s your name??: ', (acc) => {
     function zedudeTalker() {
-        rl.question(`What can I do for you ?? ${acc} \n`, (ans) => {
+        rl.question(`What can I do for you ?? ${acc}\n`, (ans) => {
             let an = ans.split(' ').map((letter) => letter.toLowerCase()).join(" ")
             switch (an) {
                 case 'tell me a joke':
