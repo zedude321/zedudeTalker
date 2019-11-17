@@ -1,6 +1,6 @@
 {
   "name": "zedudetalker",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "This is a copy of Google Assistant and Siri but with Javascript",
   "main": "zedudeTalker.js",
   "scripts": {
@@ -12,10 +12,12 @@
   },
   "keywords": [
     "zedude",
-    "talker"
+    "talker",
+    "Siri",
+    "Google Assistant"
   ],
   "author": "Zedude",
-  "license": "ISC",
+  "license": "12 yrs old",
   "bugs": {
     "url": "https://github.com/zedude321/zedudeTalker/issues"
   },

@@ -125,7 +125,7 @@ rl.question('What`s your name??: ', (acc) => {
                                 console.log('Here`s what I found: https://en.wikipedia.org/wiki/Battery_charger#Power_bank'); zedudeTalker(); break
                             case 'never mind':
                                 console.log('OK'); zedudeTalker(); break
-                            default: 
+                            default:
                                 console.log('Sry I don`t know that. You can email `zedude321@gmail.com` to give some suggestions'); zedudeTalker(); break
                         }
                     }); zedudeTalker(); break
@@ -145,14 +145,21 @@ rl.question('What`s your name??: ', (acc) => {
                         switch (hci) {
                             case 'make money':
                                 console.log('Well if you`re a student then ask your parents or get a day job, if you`re an adult get a job'); zedudeTalker(); break
-                            case 'never mind': 
+                            case 'never mind':
                                 console.log('OK'); zedudeTalker(); break
-                            default: 
+                            default:
                                 console.log('Sry I don`t know, email `zedude321@gmail.com` to give some suggestions.'); zedudeTalker(); break
                         }
                     })
                 default:
-                    console.log('Sry IDK')
+                    let qwertyuiop = Math.floor(Math.random() * 5)
+                    switch (qwertyuiop) {
+                        case 0: console.log('Sry IDK XD'); zedudeTalker(); break
+                        case 1: console.log('Ummmm. I don`t know. Contact `zedude321@gmail.com` to give some suggestions'); zedudeTalker(); break
+                        case 2: console.log('Sorry I can`t do that yet'); zedudeTalker(); break
+                        case 3: console.log('Whoops you said a word I don`t understand yet'); zedudeTalker(); break
+                        case 4: console.log('I don`t understand. I`s not my problem though it`s `zedude321@gmail.com`s problem'); zedudeTalker(); break
+                    }
                     zedudeTalker();
             }
         })
