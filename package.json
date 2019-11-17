@@ -1,0 +1,23 @@
+{
+  "name": "zedudetalker",
+  "version": "0.0.1",
+  "description": "This is a copy of Google Assistant and Siri but with Javascript",
+  "main": "zedudeTalker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zedude321/zedudeTalker.git"
+  },
+  "keywords": [
+    "zedude",
+    "talker"
+  ],
+  "author": "Zedude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zedude321/zedudeTalker/issues"
+  },
+  "homepage": "https://github.com/zedude321/zedudeTalker#readme"
+}
