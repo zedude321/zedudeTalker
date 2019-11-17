@@ -39,7 +39,7 @@ rl.question('What`s your name??: ', (acc) => {
                 case 'what is the time':
                     let time = date.getHours();
                     let minute = date.getMinutes();
-                    console.log(`It's ${time} o'clock and ${ minute } minute(s)`)
+                    console.log(`It's ${time} o'clock and ${minute} minute(s)`)
                     zedudeTalker(); break
                 case 'what is the date':
                     let year = date.getFullYear();
@@ -123,19 +123,34 @@ rl.question('What`s your name??: ', (acc) => {
                                 console.log('Here it is sir: https://en.wikipedia.org/wiki/Headphones'); zedudeTalker(); break
                             case 'a powerbank', 'powerbanks':
                                 console.log('Here`s what I found: https://en.wikipedia.org/wiki/Battery_charger#Power_bank'); zedudeTalker(); break
+                            case 'never mind':
+                                console.log('OK'); zedudeTalker(); break
+                            default: 
+                                console.log('Sry I don`t know that. You can email `zedude321@gmail.com` to give some suggestions'); zedudeTalker(); break
                         }
                     }); zedudeTalker(); break
-                case 'what do like':
+                case 'what do you like':
                     console.log('Well I like everything good, but the thing I like most is Zedude'); zedudeTalker(); break
                 case 'hello': console.log(`Hello ${acc}`); zedudeTalker(); break
-                case 'what can you do': 
+                case 'what can you do':
                     let a = Math.floor(Math.random() * 2)
-                    switch(a) {
+                    switch (a) {
                         case 0: console.log('You can say `what is` and ask anything'); break
                         case 1: console.log('You can say `what is the time` or `what is the date`'); break
                     }; zedudeTalker(); break
-                case `let's play a game`: 
-                    console.log('I`m not smart enough to play those, so here`s a link to some: https://www.npmjs.com/search?q=games');zedudeTalker(); break
+                case `let's play a game`:
+                    console.log('I`m not smart enough to play those, so here`s a link to some: https://www.npmjs.com/search?q=games'); zedudeTalker(); break
+                case 'how can i':
+                    rl.question('Do what ?: ', (hci) => {
+                        switch (hci) {
+                            case 'make money':
+                                console.log('Well if you`re a student then ask your parents or get a day job, if you`re an adult get a job'); zedudeTalker(); break
+                            case 'never mind': 
+                                console.log('OK'); zedudeTalker(); break
+                            default: 
+                                console.log('Sry I don`t know, email `zedude321@gmail.com` to give some suggestions.'); zedudeTalker(); break
+                        }
+                    })
                 default:
                     console.log('Sry IDK')
                     zedudeTalker();
